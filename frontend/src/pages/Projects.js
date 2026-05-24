@@ -113,8 +113,8 @@ export default function Projects() {
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 12 }}>
                   <div style={{
                     width: 40, height: 40, borderRadius: 10,
-                    background: `${project.color ? project.color : '#3b82f6'}20`, display: 'flex', alignItems: 'center',
-                    justifyContent: 'center', fontSize: 18, color: project.color || '#3b82f6'
+                    background: '#3b82f620', display: 'flex', alignItems: 'center',
+                    justifyContent: 'center', fontSize: 18, project.color ? : '#3b82f6'
                   }}>◫</div>
                   {(project.owner?._id === user?._id || project.owner === user?._id) && (
                     <button className="btn btn-danger btn-sm" onClick={(e) => handleDelete(project._id, e)}>✕</button>
