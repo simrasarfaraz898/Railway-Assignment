@@ -109,4 +109,4 @@ export default function Projects() {
         <div className="grid-3">
           {projects.map(project => (
             <Link to={`/projects/${project._id}`} key={project._id} style={{ textDecoration: 'none' }}>
-          <div className="card" style={{ cursor: 'pointer', transition: 'all 0.2s', borderTop: '3px solid ' + (project.color ? project.color : '#3b82f6') }}>
+              <div className="card" style={{ cursor: 'pointer', transition: 'all 0.2s', borderTop: '3px solid ' + (project.color ? project.color : '#3b82f6') }}>
